@@ -1,3 +1,24 @@
+/* Izmantojamās krāsas:
+
+Secondary colors:
+    Tumši zaļš
+    Hex: #8E8B6B
+
+    Gaiši zaļš (contrasts zaļajiem)
+    Hex: #A6AA8A
+
+Main colors:
+    Ļoti gaiši dzeltens (contrast dzeltenajiem)
+    Hex: #ECD495
+
+    Tumši dzeltens
+    Hex: #936B47
+
+Ja liec black or white tad:
+Black = rgb(40, 40, 40)
+White = rgb(215, 215, 215)
+*/
+
 body{
     margin: 0;
     padding: 0;
@@ -5,7 +26,8 @@ body{
     background-image: url('Images/background.png');
     background-repeat: no-repeat;
     background-size:cover;
-    background-position-y:-100px;
+    background-position-y:-200px;
+    display: block;
 }
 
 /* Font */
@@ -15,13 +37,26 @@ body{
 
 h1{
     text-align: center;
-    font-size: 50px;
-    color: white;
+    font-size: 100px;
+    /* text-shadow: 1px 5px 2px rgb(40, 40, 40); */
+    color: #ECD495;
     -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: #936B47;
 }
 
 img{
     filter: blur(2px);
     width: 100%;
+}
+
+#test{
+    background-color: #936B47;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px #ECD495;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 600px;
 }
