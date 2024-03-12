@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: MouldyCheese;
+}
+
+/* Font */
+
+@font-face { font-family: MouldyCheese; src: url('Fonts/MouldyCheeseRegular-WyMWG.ttf'); } 
+@font-face { font-family: MouldyCheese; font-weight: bold; src: url('Fonts/MouldyCheeseRegular-WyMWG.ttf');}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
