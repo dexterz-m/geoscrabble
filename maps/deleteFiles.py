@@ -37,6 +37,6 @@
 #             os.rename(folder_path, os.path.join(path, full_country_name))
 #             print(f"Renamed {folder} to {full_country_name}")
 
-# folder_path = "C:/Users/Lietotajs/Documents/GitHub/geoscrabble/maps/samerica"
+# folder_path = "C:/Users/Lietotajs/Documents/GitHub/geoscrabble/maps/all"
 
 # rename_folders(folder_path)
