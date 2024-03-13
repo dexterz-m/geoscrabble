@@ -35,9 +35,8 @@ body{
 
 #logo{
     display: block;
-    max-width: 50%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    max-width: 40%;
+    margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -49,6 +48,7 @@ body{
     
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
     padding: 40px;
     padding-top: 10px;
     width: 40%;
@@ -138,7 +138,32 @@ body{
     font-size: 40px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -20px;
     text-align: center;
+}
+
+#backButton{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: -10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px #865c37;
+    background-color: #ecd495;
+    border: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+#backButton:hover{
+    background-color: #ecd495;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 5px #865c37;
+    transform: scale(110%)
+}
+
+#backArrowImg{
+    margin-left: 2px;
 }
 
 /* PLEASE DON'T TOUCH (MAN NAV NE JAUSMAS KĀ ŠIS STRĀDĀ, BET VIŅŠ STRĀDĀ)*/
@@ -193,6 +218,7 @@ body{
     height: 50%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
     display: block;
     pointer-events: none;
 }
