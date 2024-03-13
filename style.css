@@ -138,14 +138,43 @@ body{
     transform: scale(1.05);
 }
 
-
-
-#countryImage{
-    --outline-direction: 0deg;
-    --outline-size: 50%;
-
-    mask-image: linear-gradient(var(--outline-direction), transparent var(--outline-size), black var(--outline-size));
-    -webkit-mask-image: linear-gradient(var(--outline-direction), transparent var(--outline-size), black var(--outline-size));
+/* PLEASE DON'T TOUCH (MAN NAV NE JAUSMAS KĀ ŠIS STRĀDĀ, BET VIŅŠ STRĀDĀ)*/
+#countryImage {
+    /* Only change --gap-size AND --outline-dirrection */
+    --outline-direction: 45deg;
+    --gap-size: 20%;
+    
+    --visibility: 5%; /* DONT TOUCH THIS VALUE*/
+    mask-image: 
+        repeating-linear-gradient(
+            var(--outline-direction), 
+            black 0, 
+            black var(--visibility), 
+            transparent var(--visibility), 
+            transparent calc(var(--visibility) + var(--gap-size))
+        ),
+        repeating-linear-gradient(
+            var(--outline-direction), 
+            transparent calc(var(--visibility) + var(--gap-size)), 
+            transparent calc(var(--visibility) + 2 * var(--gap-size)), 
+            black calc(var(--visibility) + 2 * var(--gap-size)), 
+            black calc(2 * var(--visibility) + 2 * var(--gap-size))
+        );
+    -webkit-mask-image: 
+        repeating-linear-gradient(
+            var(--outline-direction), 
+            black 0, 
+            black var(--visibility), 
+            transparent var(--visibility), 
+            transparent calc(var(--visibility) + var(--gap-size))
+        ),
+        repeating-linear-gradient(
+            var(--outline-direction), 
+            transparent calc(var(--visibility) + var(--gap-size)), 
+            transparent calc(var(--visibility) + 2 * var(--gap-size)), 
+            black calc(var(--visibility) + 2 * var(--gap-size)), 
+            black calc(2 * var(--visibility) + 2 * var(--gap-size))
+        );
     mask-mode: alpha;
     -webkit-mask-mode: alpha;
 
@@ -163,3 +192,11 @@ body{
     margin-right: auto;
     display: block;
 }
+
+
+
+
+
+
+
+
