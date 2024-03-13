@@ -10,7 +10,21 @@
 
     <img src="Images/logo.png" id="logo">
 
-    <div id="test"></div>
+    <div id="sections">
+        <div class="section" id="main">
+            <button id="dailyGameButton" onclick="switchSection('game')">Play</button>
+            <button id="practiceGameButton" onclick="switchSection('game')">Practice</button>
+            <button id="creditsGameButton" onclick="switchSection('game')">Credits</button>
+        </div>
+        <div class="section" id="practice">
+            
+        </div>
+        <div class="section" id="game">
+            <h2>hello you did it</h2>
+            <button id="backButton" onclick="switchSection('main')">Back</button>
+            
+        </div>
+    </div>
 
     <script src="main.js"></script>
 </body>

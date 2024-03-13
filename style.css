@@ -1,18 +1,17 @@
 /* Izmantojamās krāsas:
 
-Secondary colors:
-    Tumši zaļš
-    Hex: #8E8B6B
-
-    Gaiši zaļš (contrasts zaļajiem)
-    Hex: #A6AA8A
-
 Main colors:
     Ļoti gaiši dzeltens (contrast dzeltenajiem)
-    Hex: #ECD495
+    Hex: #fbe7b5
+
+    Gaiši dzeltens
+    Hex: #d6b970
 
     Tumši dzeltens
     Hex: #936B47
+
+    Ļoti tumši dzltens
+    Hex: #865c37
 
 Ja liec black or white tad:
 Black = rgb(40, 40, 40)
@@ -27,22 +26,12 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
     background-position-y:-200px;
-    display: block;
 }
 
 /* Font */
 
 @font-face { font-family: MouldyCheese; src: url('Fonts/MouldyCheeseRegular-WyMWG.ttf'); } 
 @font-face { font-family: MouldyCheese; font-weight: bold; src: url('Fonts/MouldyCheeseRegular-WyMWG.ttf');}
-
-h1{
-    text-align: center;
-    font-size: 100px;
-    /* text-shadow: 1px 5px 2px rgb(40, 40, 40); */
-    color: #ECD495;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: #936B47;
-}
 
 #logo{
     display: block;
@@ -53,14 +42,94 @@ h1{
     margin-right: auto;
 }
 
-#test{
+#sections{
     background-color: #936B47;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 5px #ECD495;
+    box-shadow: 0px 0px 10px 5px #fbe7b5;
     
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    padding-top: 100px;
+    width: 40%;
+    height: 500px;
+}
+
+
+#dailyGameButton{
+    color: #d6b970;
+    background-color: #865c37;
+    box-shadow: 0px 0px 10px 5px #d6b970;
+    font-size:50px;
+    font-family: inherit;
+    border-radius: 20px;
+    border: none;
+
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    height: 600px;
+    margin-top: auto;
+    height: 100px;
+    width: 70%;
+
+    transition: transform 0.2s ease;
+}
+#dailyGameButton:Hover{
+    color: #fbe7b5;
+    background-color: #865c37;
+    box-shadow: 0px 0px 10px 5px #fbe7b5;
+
+    transform: scale(1.05);
+}
+
+#practiceGameButton{
+    color: #d6b970;
+    background-color: #865c37;
+    box-shadow: 0px 0px 10px 5px #d6b970;
+    font-size:50px;
+    font-family: inherit;
+    border-radius: 20px;
+    border: none; 
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 80px;
+    width: 400px;
+
+    transition: transform 0.2s ease;
+}
+#practiceGameButton:Hover{
+    color: #fbe7b5;
+    background-color: #865c37;
+    box-shadow: 0px 0px 10px 5px #fbe7b5;
+
+    transform: scale(1.05);
+}
+
+#creditsGameButton{
+    color: #d6b970;
+    background-color: #865c37;
+    box-shadow: 0px 0px 10px 5px #d6b970;
+    font-size:50px;
+    font-family: inherit;
+    border-radius: 20px;
+    border: none; 
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 80px;
+    width: 400px;
+
+    transition: transform 0.2s ease;
+}
+#creditsGameButton:Hover{
+    color: #fbe7b5;
+    background-color: #865c37;
+    box-shadow: 0px 0px 10px 5px #fbe7b5;
+
+    transform: scale(1.05);
 }
