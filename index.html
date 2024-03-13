@@ -12,7 +12,7 @@
 
     <div id="sections">
         <div class="section" id="main">
-            <button id="dailyGameButton" onclick="switchSection('game')">Play</button>
+            <button id="dailyGameButton" onclick="startGame()">Play</button>
             <button id="practiceGameButton" onclick="switchSection('game')">Practice</button>
             <button id="creditsGameButton" onclick="switchSection('game')">Credits</button>
         </div>
@@ -20,13 +20,15 @@
             
         </div>
         <div class="section" id="game">
-            <h2>hello you did it</h2>
+            <p id="countryTitle">What's the country?</p>
             <button id="backButton" onclick="switchSection('main')">Back</button>
             <img draggable="false" id="countryImage" src="maps/asia/India/1024.png">
 
             <div id="input">
                 <input id="countryInput">
-                <button id="submitButton"><img src="Images/submitTick.png"></button>
+                
+                <button id="submitButton">
+                <img id="submitImage" src="Images/check-mark.png"></button>
             </div>
             
         </div>

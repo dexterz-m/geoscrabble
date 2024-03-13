@@ -12,3 +12,33 @@ function switchSection(newSectionId) {
     }
 }
 switchSection("main")
+
+
+function startGame() {
+    switchSection("game")
+    fetchRandomImage()
+}
+
+
+
+
+function setRandomImage(countryName) {
+    const randomImageElement = document.getElementById("countryImage");
+    randomImageElement.src = `maps/all/${countryName}/1024.png`;
+}
+
+function fetchRandomImage() {
+    fetch('http://localhost:3000/randomImage')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(countryName => setRandomImage(countryName))
+        .catch(error => console.error('Error fetching random image:', error));
+}
+
+
+
+

@@ -5,10 +5,10 @@ Main colors:
     Hex: #fbe7b5
 
     Gaiši dzeltens
-    Hex: #d6b970
+    Hex: #ecd495
 
     Tumši dzeltens
-    Hex: #936B47
+    Hex: #a3754d
 
     Ļoti tumši dzltens
     Hex: #865c37
@@ -43,27 +43,30 @@ body{
 }
 
 #sections{
-    background-color: #936B47;
+    background-color: #a3754d;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 5px #fbe7b5;
+    box-shadow: 0px 0px 10px 5px #ecd495;
     
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
-    padding-top: 50px;
+    padding-top: 10px;
     width: 40%;
-    height: 500px;
+    height: 550px;
 }
 
 .section{
-    padding: 20px
+    padding: 10px;
 }
 
+#main {
+    padding-top: 60px;
+}
 
 #dailyGameButton{
-    color: #d6b970;
-    background-color: #865c37;
-    box-shadow: 0px 0px 10px 5px #d6b970;
+    color: #865c37;
+    background-color: #ecd495;
+    box-shadow: 0px 0px 10px 5px #865c37;
     font-size:50px;
     font-family: inherit;
     border-radius: 20px;
@@ -79,17 +82,13 @@ body{
     transition: transform 0.2s ease;
 }
 #dailyGameButton:Hover{
-    color: #fbe7b5;
-    background-color: #865c37;
-    box-shadow: 0px 0px 10px 5px #fbe7b5;
-
     transform: scale(1.05);
 }
 
 #practiceGameButton{
-    color: #d6b970;
-    background-color: #865c37;
-    box-shadow: 0px 0px 10px 5px #d6b970;
+    color: #865c37;
+    background-color: #ecd495;
+    box-shadow: 0px 0px 10px 5px #865c37;
     font-size:50px;
     font-family: inherit;
     border-radius: 20px;
@@ -105,17 +104,13 @@ body{
     transition: transform 0.2s ease;
 }
 #practiceGameButton:Hover{
-    color: #fbe7b5;
-    background-color: #865c37;
-    box-shadow: 0px 0px 10px 5px #fbe7b5;
-
     transform: scale(1.05);
 }
 
 #creditsGameButton{
-    color: #d6b970;
-    background-color: #865c37;
-    box-shadow: 0px 0px 10px 5px #d6b970;
+    color: #865c37;
+    background-color: #ecd495;
+    box-shadow: 0px 0px 10px 5px #865c37;
     font-size:50px;
     font-family: inherit;
     border-radius: 20px;
@@ -131,11 +126,19 @@ body{
     transition: transform 0.2s ease;
 }
 #creditsGameButton:Hover{
-    color: #fbe7b5;
-    background-color: #865c37;
-    box-shadow: 0px 0px 10px 5px #fbe7b5;
-
     transform: scale(1.05);
+}
+
+#game {
+    display: block;
+}
+
+#countryTitle {
+    color: #fbe7b5;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 /* PLEASE DON'T TOUCH (MAN NAV NE JAUSMAS KĀ ŠIS STRĀDĀ, BET VIŅŠ STRĀDĀ)*/
@@ -205,33 +208,36 @@ body{
     display: block;
     margin-right: 5%;
     width: 50%;
-    border-radius: 20px;
-    border: 2px solid #936B47;
-    box-shadow: 0px 0px 10px 5px #fbe7b5;
-    background-color: #fbe7b5;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px #865c37;
+    background-color: #ecd495;
+    color: #865c37;
+    font-family: inherit;
     font-size: 35px;
     text-align: center;
+    border: none;
 }
 
 #countryInput:focus{
-    box-shadow: 0px 0px 5px 5px #fbe7b5;
+    border: none;
 }
 
 #submitButton{
     display: block;
     width: 40px;
     height: 40px;
-    border-radius: 20px;
-    border: 2px solid #936B47;
-    box-shadow: 0px 0px 10px 5px #fbe7b5;
-    background-color: #369e19;
-    transition: transform .3s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px #865c37;
+    background-color: #ecd495;
+    border: none;
+    transition: transform 0.2s ease-in-out;
 }
 
 #submitButton:hover{
-    background-color: #369e19bf;
+    background-color: #ecd495;
     cursor: pointer;
-    box-shadow: 0px 0px 5px 5px #fbe7b5;
+    box-shadow: 0px 0px 5px 5px #865c37;
     transform: scale(110%)
 }
 
