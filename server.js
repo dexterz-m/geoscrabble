@@ -46,7 +46,7 @@ app.get('/randomImage', (req, res) => {
     });
 });
 
-const port = 3000;
-app.listen(port, () => {
+const port = 5000;
+app.listen(process.env.PORT || port, () => {
     console.log(`Server is running on https://dexterz-m.github.io/geoscrabble`);
 });
