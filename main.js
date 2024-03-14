@@ -19,16 +19,13 @@ function startGame() {
     fetchRandomImage()
 }
 
-
-
-
 function setRandomImage(countryName) {
     const randomImageElement = document.getElementById("countryImage");
-    randomImageElement.src = `maps/all/${countryName}/1024.png`;
+    randomImageElement.src = `${countryName}`;
 }
 
 function fetchRandomImage() {
-    fetch('http://localhost:3000/randomImage')
+    fetch('https://dexterz-m.github.io/geoscrabble/randomImage')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -38,7 +35,3 @@ function fetchRandomImage() {
         .then(countryName => setRandomImage(countryName))
         .catch(error => console.error('Error fetching random image:', error));
 }
-
-
-
-
