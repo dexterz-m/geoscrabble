@@ -79,7 +79,7 @@ body{
     margin-right: auto;
     margin-top: 55px;
     height: 80px;
-    width: 70%;
+    width: 400px;
 
     transition: transform 0.2s ease;
 }
