@@ -13,12 +13,10 @@
     <div id="sections">
         <div class="section" id="main">
             <button id="dailyGameButton" onclick="startGame()">Play</button>
-            <button id="practiceGameButton" onclick="switchSection('game')">Practice</button>
-            <button id="creditsGameButton" onclick="switchSection('game')">Credits</button>
+            <button id="practiceGameButton" onclick="switchSection('practice')">Practice</button>
+            <button id="creditsGameButton" onclick="switchSection('credits')">Credits</button>
         </div>
-        <div class="section" id="practice">
-            
-        </div>
+
         <div class="section" id="game">
             <button id="backButton" onclick="switchSection('main')"><img src="Images/back-arrow.png" id="backArrowImg"></button>
             <p id="countryTitle">What's the country?</p>
@@ -32,7 +30,46 @@
             </div>
             
         </div>
+
+        <div class="section" id="practice">
+            <button id="backButton" onclick="switchSection('main')"><img src="Images/back-arrow.png" id="backArrowImg"></button>
+            <p id="practiceTitle">Practice</p>
+
+            <button id="europeButton" class="practiceButton" onclick="switchSection('practice')">Europe</button>
+            <button id="africaButton" class="practiceButton" onclick="switchSection('practice')">Africa</button>
+            <button id="asiaButton" class="practiceButton" onclick="switchSection('practice')">Asia</button>
+            <button id="americaButton" class="practiceButton" onclick="switchSection('practice')">America</button>
+            <button id="oceaniaButton" class="practiceButton" onclick="switchSection('practice')">Oceania</button>
+
+        </div>
+
+        <div class="section" id="credits">
+            <button id="backButton" onclick="switchSection('main')"><img src="Images/back-arrow.png" id="backArrowImg"></button>
+            <p id="creditsTitle">Credits</p>
+
+            <p id="creditsTitle2">Developers</p>
+            
+            <div id="creditsContainer">
+
+                <div class="creditsUser" id="dexterz-m">
+                    <img src="Images/creditsDexter.png" id="creditsImage">
+                    <p class="creditsDescription"><a class="creditsDescription" href="https://github.com/dexterz-m">dexterz-m</a></p>
+                </div>
+
+                <div class="creditsUser" id="RoustyTousty">
+                    <img src="Images/creditsRousty.jpeg" id="creditsImage">
+                    <p class="creditsDescription"><a class="creditsDescription" href="https://github.com/RoustyTousty">RoustyTousty</a></p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
     </div>
+
+    <footer id="rights"><a id="rightsLink" href="https://github.com/dexterz-m/geoscrabble">© All rights reserved dexterz-m & RoustyTousty</a></footer>
 
     <script src="main.js"></script>
 </body>

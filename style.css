@@ -36,7 +36,7 @@ body{
 #logo{
     display: block;
     max-width: 40%;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -48,7 +48,7 @@ body{
     
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 40px;
     padding-top: 10px;
     width: 40%;
@@ -63,6 +63,8 @@ body{
     padding-top: 60px;
 }
 
+/* Menu */
+
 #dailyGameButton{
     color: #865c37;
     background-color: #ecd495;
@@ -75,14 +77,15 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
-    height: 100px;
+    margin-top: 55px;
+    height: 80px;
     width: 70%;
 
     transition: transform 0.2s ease;
 }
 #dailyGameButton:Hover{
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 #practiceGameButton{
@@ -97,7 +100,7 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 55px;
     height: 80px;
     width: 400px;
 
@@ -105,6 +108,7 @@ body{
 }
 #practiceGameButton:Hover{
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 #creditsGameButton{
@@ -119,7 +123,7 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 55px;
     height: 80px;
     width: 400px;
 
@@ -127,7 +131,10 @@ body{
 }
 #creditsGameButton:Hover{
     transform: scale(1.05);
+    cursor: pointer;
 }
+
+/* Game */
 
 #game {
     display: block;
@@ -267,9 +274,114 @@ body{
     transform: scale(110%)
 }
 
+/* Practice */
+
+#practiceTitle{
+    color: #fbe7b5;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.practiceButton{
+    display: block;
+    text-align: center;
+    margin-block: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #865c37;
+    background-color: #ecd495;
+    box-shadow: 0px 0px 10px 5px #865c37;
+    font-size:40px;
+    font-family: inherit;
+    border-radius: 20px;
+    height: 60px;
+    width: 40%;
+    padding-inline: 10px;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.practiceButton:hover{
+    transform: scale(105%);
+    cursor: pointer;
+}
+
+
+/* Credits */
+
+#creditsTitle{
+    color: #fbe7b5;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    text-align: center;
+}
+
+#creditsTitle2{
+    color: #fbe7b5;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
+#creditsContainer{
+    display: flex;
+    width: 70%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.creditsUser{
+    display: block;
+}
+
+#creditsImage{
+    height: 150px;
+    border-radius: 75px;
+    border: 1px solid #fbe7b5;
+    box-shadow: 0px 0px 10px 5px #865c37;
+    pointer-events: none;
+}
+
+.creditsDescription{
+    text-align: center;
+    color: #fbe7b5;
+    font-size: 25px;
+    transition: transform .2s;
+    text-decoration: none;
+}
+
+.creditsDescription:hover{
+    cursor: pointer;
+    transform: scale(110%);
+}
 
 
 
+/* Footer */
 
+#rights{
+    text-align: center;
+    color: #fbe7b5;
+    margin-top: 25px;
+}
 
+#rightsLink{
+    text-decoration: none;
+    color: #fbe7b5;
+}
 
+#rightsLink:hover{
+    color: #ecd495;
+}
