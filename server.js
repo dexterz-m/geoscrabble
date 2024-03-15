@@ -10,7 +10,7 @@ const imageFolder = 'maps/all';
 // Use cors middleware to allow requests from any origin
 app.use(cors());
 
-app.get('/randomImage', (req, res) => {
+app.get('https://geoscrabble.netlify.app/randomImage', (req, res) => {
     fs.readdir(imageFolder, { withFileTypes: true }, (err, files) => {
         if (err) {
             console.error('Error reading images directory:', err);
