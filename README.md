@@ -2,4 +2,4 @@
 Geographical map outline guesing game project.
 Made by dexterz-m and RoustyTousty
 
-Hello test
+Hello test 2
